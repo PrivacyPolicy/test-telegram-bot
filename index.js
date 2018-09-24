@@ -1,10 +1,8 @@
 const request = require('request');
 const express = require('express');
 const bodyParser = require('body-parser');
-const telegram = require('telegram-bot-api');
 const {token, port} = require('./env.js');
 
-const api = new telegram({ token });
 const app = express();
 app.use(bodyParser.json());
 
